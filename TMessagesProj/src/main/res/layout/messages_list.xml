@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4007266552012542/7646112516"></com.google.android.gms.ads.AdView>
+
+        <ListView
+            android:id="@+id/messages_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animationCache="false"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:layout_below="@+id/adView" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/search_empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#808080"
+            android:textSize="20dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/list_empty_view_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#959595"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/list_empty_view_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:textColor="#959595"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/floating_states"
+        android:src="@drawable/floating_pencil" />
+
+</FrameLayout>
