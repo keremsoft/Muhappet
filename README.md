@@ -1,7 +1,8 @@
-## Telegram messenger for Android
+## Muhappet for Android
 
-[Telegram](http://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
-This repo contains the official source code for [Telegram App for Android](https://play.google.com/store/apps/details?id=org.telegram.messenger).
+Muhappet is a fork of [Telegram](http://telegram.org) messaging app with a focus on speed and security. It’s superfast, simple and free.
+[Muhappet on Play Store](https://play.google.com/store/apps/details?id=com.muhappet.android)
+This repo contains the unofficial source code for [Telegram App for Android](https://play.google.com/store/apps/details?id=org.telegram.messenger).
 
 ##Creating your Telegram Application
 
